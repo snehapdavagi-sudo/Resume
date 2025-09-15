@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bio-Data | Sneha P Davagi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #e6e0e5, #9c929a);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header Navigation */
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      position: sticky;
+      top: 0;
+    }
+
+    header a {
+      color: rgba(234, 227, 227, 0.932);
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      color: #ebc387;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin: 0 auto 15px;
+    }
+
+    .card h1 {
+      margin: 10px 0 5px;
+      font-size: 2rem;
+      color: #ebc387;
+    }
+
+    .card h2 {
+      font-size: 1rem;
+      font-weight: normal;
+      color: #eee;
+      margin-bottom: 20px;
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 30px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .bio-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px 20px;
+      border-radius: 10px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #ebc387;
+    }
+
+    .value {
+      display: block;
+      margin-top: 5px;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .bio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Bio-Data</a>
+    <a href="resume.html">Resume</a>
+  </header>
+
+  <!-- Main Bio-Data Card -->
+  <main>
+    <div class="card">
+      <div class="profile-pic"></div>
+      <h1>Sneha P Davagi</h1>
+      <h2>B.E(CSE) - SKSVMACET</h2>
+
+      <div class="bio-grid">
+        <div class="bio-item">
+          <span class="label">Father's Name:</span>
+          <span class="value">Mr. Prakash</span>
+        </div>
+        <div class="bio-item">
+          <span class="label">Mother's Name:</span>
+          <span class="value">Mrs. Annapurna</span>
+        </div>
+        <div class="bio-item">
+          <span class="label">Father's Occupation:</span>
+          <span class="value">Farmer</span>
+        </div>
+        <div class="bio-item">
+          <span class="label">Date of Birth:</span>
+          <span class="value">13-12-2003</span>
+        </div>
+        <div class="bio-item">
+          <span class="label">Height:</span>
+          <span class="value">5'0"</span>
+        </div>
+        <div class="bio-item">
+          <span class="label">Caste:</span>
+          <span class="value">General</span>
+        </div>
+        <div class="bio-item">
+          <span class="label">Siblings:</span>
+          <span class="value">1</span>
+        </div>
+        <div class="bio-item">
+          <span class="label">Phone Number:</span>
+          <span class="value">+91 9008340636</span>
+        </div>
+        <div class="bio-item">
+          <span class="label">Email ID:</span>
+          <span class="value"><a href="mailto:snehadavagi@gmail.com" style="color: white;">snehadavagi@gmail.com</a></span>
+        </div>
+        <div class="bio-item" style="grid-column: span 2;">
+          <span class="label">Address:</span>
+          <span class="value">
+            AT Post Hosur, Tq-Shiggaon, Dist-Haveri, <br />
+            PinCode - 581193
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Sneha P Davagi | All Rights Reserved
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script>
+    const heading = document.querySelector("h1");
+    heading.addEventListener("mouseover", () => {
+      heading.style.color = "#ffeb3b";
+    });
+    heading.addEventListener("mouseout", () => {
+      heading.style.color = "#ebc387";
+    });
+  </script>
+
+</body>
+</html>
+

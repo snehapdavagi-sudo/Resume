@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — Sneha P D</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #ebc387;
+      --accent-2: #ffcc80;
+      --bg-gradient: linear-gradient(120deg, #3d29c33a, #2217ba);
+      --card-bg: rgba(0, 0, 0, 0.6);
+      --glass-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg-gradient);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    }
+
+    .brand {
+      font-weight: 700;
+      color: var(--accent-2);
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--accent);
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: var(--max-width);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 700px;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      color: var(--accent-2);
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-info {
+      margin-top: 14px;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      text-align: center;
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.65);
+      text-align: center;
+      padding: 14px 20px;
+      font-size: 0.95rem;
+      color: #e9e9e9;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      .profile-section {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .profile-info {
+        text-align: left;
+      }
+
+      .intro {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand">Sneha P D</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="biodata.html">Bio-Data</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="intro">
+      <h1>Hey, I'm Sneha 👋</h1>
+      <p>Welcome to my digital portfolio. I'm currently pursuing B.E in Computer Science at SKSVMACET. You can explore my Resume and Bio-Data below.</p>
+    </section>
+
+    <section class="profile-section">
+      <img class="profile-pic" src="C:\Users\HP\Desktop\resume\img.jpeg" alt="Sneha P D">
+      <div class="profile-info">
+        <p><strong>Course:</strong> B.E (CSE)</p>
+        <p><strong>CGPA:</strong> 7.6</p>
+        <p><strong>Location:</strong> Shiggaon, Haveri</p>
+      </div>
+    </section>
+
+    <section class="actions">
+      <a class="btn" href="resume.html">View Resume</a>
+      <a class="btn secondary" href="biodata.html">View Bio-Data</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Sneha P D • <a href="mailto:snehadavagi@gmail.com">snehadavagi@gmail.com</a>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('nav a');
+      const file = location.pathname.split('/').pop() || 'index.html';
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === file) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
